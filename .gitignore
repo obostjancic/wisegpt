@@ -44,3 +44,4 @@ htmlcov/
 # Project specific
 .wisegpt_history
 *.log
+.ruff_cache/
