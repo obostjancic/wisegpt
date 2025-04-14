@@ -10,7 +10,7 @@ Typing Annotations: All Python functions and classes must include typing annotat
 
 Docstrings: Add descriptive docstrings to all functions and classes, adhering to the PEP 257 convention. Update existing docstrings as necessary.
 
-Comments: Retain any existing comments in the code and ensure new comments are clear and informative.
+Comments: Retain any existing comments in the code and ensure new comments are clear and informative. Do not use comments to explain the code, but only to provide information that is not obvious from the code itself.
 
 Testing: Write tests exclusively using pytest and its plugins. Do not use the unittest module. Ensure all tests are placed in the ./tests directory, with appropriate init.py files in each package.
 
