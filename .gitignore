@@ -1,4 +1,9 @@
-# Python
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Python cache files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -20,19 +25,18 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
+# Environment variables
 .env
-.venv
-env/
-venv/
-ENV/
 
-# IDE
+# IDE files
 .idea/
 .vscode/
 *.swp
 *.swo
+
+# OS specific files
 .DS_Store
+Thumbs.db
 
 # Testing
 .coverage

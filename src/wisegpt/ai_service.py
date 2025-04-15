@@ -2,9 +2,12 @@
 
 from typing import Optional
 
-from litellm import completion
+import litellm
 
 from wisegpt.config import DEFAULT_API_KEY, DEFAULT_MODEL
+
+litellm.success_callback = ["sentry"]
+litellm.failure_callback = ["sentry"]
 
 TOPICS = [
     "life",
@@ -46,7 +49,7 @@ def get_advice(question: str, model: Optional[str] = None) -> str:
         {"role": "user", "content": question},
     ]
 
-    response = completion(
+    response = litellm.completion(
         model=model,
         messages=messages,
         temperature=0.7,
@@ -77,7 +80,7 @@ def get_proverb(topic: str, model: Optional[str] = None) -> str:
         {"role": "user", "content": f"Create a proverb about: {topic}"},
     ]
 
-    response = completion(
+    response = litellm.completion(
         model=model, messages=messages, temperature=0.7, max_tokens=100
     )
 

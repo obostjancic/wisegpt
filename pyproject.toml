@@ -5,9 +5,10 @@ description = "A CLI application that provides wise advice"
 authors = [{name = "Ognjen Bostjancic"}]
 dependencies = [
     "click>=8.0.0",
-    "litellm>=1.30.7",
+    "litellm>=1.66.0",
     "python-dotenv>=1.0.0",
-    "sentry-sdk>=1.40.0",
+    "sentry-sdk>=2.26.0",
+    "lunary>=1.4.9",
 ]
 
 [project.optional-dependencies]
